@@ -37,7 +37,7 @@ function Header({ siteSettings = {} }) {
       <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
         {/* Logo & Identity */}
         {(settings.header_show_logo !== false || settings.header_show_title !== false) && (
-          <Link to="/" className="flex items-center gap-4 group" onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+          <Link to="/" className="flex items-center gap-4 group" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
 
             {settings.header_show_logo !== false && (
               <div className="relative w-12 h-12 overflow-hidden transition-transform duration-500">
@@ -94,7 +94,7 @@ function Header({ siteSettings = {} }) {
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-x-0 top-[var(--header-height,80px)] bg-white border-b border-gray-100 shadow-xl md:hidden transition-all duration-300 ease-in-out origin-top ${isMenuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`}>
         <div className="p-6 flex flex-col gap-4">
-          <Link to="/" className="text-lg font-bold text-primary py-2 border-b border-slate-50" onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
+          <Link to="/" className="text-lg font-bold text-primary py-2 border-b border-slate-50" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
             Home
           </Link>
           {/* Placeholder for dynamic links if available later */}
