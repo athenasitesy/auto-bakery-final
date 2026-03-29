@@ -46,7 +46,8 @@
       "title": "Ambachtelijk Brood, Elke Dag Vers",
       "subtitle": "Wij geloven in de kracht van tijd, traditie en natuurlijke ingrediënten voor het perfecte zuurdesembrood.",
       "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop",
-      "button_text": "Bekijk Ons Assortiment"
+      "button_text": "Bekijk Ons Assortiment",
+      "link": "#services"
     }
   ],
   "layout_settings": {
