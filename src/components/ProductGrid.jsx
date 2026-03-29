@@ -30,7 +30,7 @@ const ProductGrid = ({ data, sectionName, features = {} }) => {
                                     <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
                                 </div>
                                 <div className="p-8 flex flex-col flex-grow text-center">
-                                    <h3 className="text-2xl font-bold mb-4 text-primary min-h-[4rem] flex items-center justify-center">
+                                    <h3 className="text-2xl font-bold mb-4 text-white min-h-[4rem] flex items-center justify-center">
                                         <EditableText value={item[titleKey]} cmsBind={{ file: sectionName, index, key: titleKey }} />
                                     </h3>
                                     <div className="text-accent font-bold mt-auto text-3xl mb-6">€{priceValue.toFixed(2)}</div>
